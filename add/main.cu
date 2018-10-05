@@ -1,6 +1,6 @@
 #include <cuda.h>
 #include <stdio.h>
-
+#include <vector>
 
 __global__ void add(int *a,int* b,int* c)
 {
@@ -9,6 +9,7 @@ __global__ void add(int *a,int* b,int* c)
 
 int main(void)
 {
+	std::vector<int> meow;
 	int a,b,c;
 	int *device_a,*device_b,*device_c;
 
